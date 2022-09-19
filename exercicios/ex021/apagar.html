@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        body{
+            background-color: rgb(168, 168, 168);
+        }
+        h1{
+            border: 10px solid black;
+            border-radius: 2px;
+            outline: 10px solid green;
+            margin: 50px;
+            padding: 10px;
+            width: 190px;
+            background-color: rgb(0, 119, 255);
+            box-shadow: 10px 10px 10px 3px rgba(0, 0, 0, 0.377);
+            text-align: center;
+        }
+        h1#titulo > p{
+          display: none;  
+        }
+
+        h1#titulo:hover > p{
+            display: block;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Ola, Mundo!
+        <hr>
+        <p>Bem vindo ao mundo da <strong>programacao!</strong></p>
+    </h1>
+</body>
+</html>

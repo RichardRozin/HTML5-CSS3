@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        h1{
+            box-shadow: 2px 1px 14px 6px rgba(0, 0, 0, 0.377);
+        }
+
+        header{
+            background-color: white;
+            padding: 1px;
+            margin: 10px;
+        }
+        main{
+            background-color: white;
+            padding: 1px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.445);
+        }
+        article{
+            background-color: lightgrey;
+            padding: 1px;
+            
+        }
+
+        article > aside{
+            background-color: rgb(145, 145, 145);
+            padding: 2px;
+            
+        }
+        nav{
+            background-color: rgb(83, 83, 83);
+            padding: 5px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.473);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            margin: 5px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politicas Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quo commodi esse ullam minima temporibus atque expedita architecto blanditiis qui iste, sunt alias iure facilis tempora! Eos obcaecati voluptatibus beatae?</p>
+                <aside>
+                    Artigo escrito pot Jose da Silva
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Richard Rozin</p>
+    </footer>
+</body>
+</html>

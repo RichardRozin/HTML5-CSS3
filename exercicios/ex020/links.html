@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        a:visited{
+            color:rgb(139, 0, 0);
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black
+        }
+        a:active{
+            color: yellow;
+        }
+        .importante{
+            background-color: rgba(255, 0, 0, 0.377);
+        }
+        .importante::after{
+            color: darkgrey;
+            content: ' ⇐';
+        }
+        .importante::before{
+            font-weight: 200;
+            color: darkgrey;
+            content: '⇒	';
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/RichardRozin" target="_blank" class="importante">Repositorio no GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/ZeroOni" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://www.instagram.com/richardrozin/" target="_blank">Meu instagran</a></li>
+        <li><a href="https://www.facebook.com/richard.rozin.3/" target="_blank">Meu Facebook</a></li>
+    </ul>
+</body>
+</html>

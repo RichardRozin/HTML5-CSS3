@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas e audios</title>
+</head>
+<body>
+    <h1>Imagens que se adaptam sozinhas</h1>
+    <p>Na hora de criar um site, devemos lembrar que nao sera so um tipo de aparelho que ira acessa-lo. <br>
+    por isso, usar o conceito de <strong>imagens dinamicas</strong> deve vir a caso. Utilizar imagens dinamicas em um site é de suma importancia <br>
+para que todos os aparelhos se adaptam corretamente com o tamanho imagem presente no site.</p>
+<h2>Criando uma imagem dinamica:</h2>
+<p>Para criar uma imagem em HTML5, basta usar a tag &lt;img&gt;, porem, essa imagem nao sera dinamica fazendo <br> com que algusn aparelhos tenham 
+dificuldades em visualizar a imagem, por isso o conceito de imagens dinamicas.</p>
+<p>Para criar uma imagem dinamica em HTML5 basta usar a tag &lt;picture&gt; e <strong>dentro da tag</strong> colocar entao a tag &lt;img&gt;.</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+    <img src="imagens/grande.png" alt="Imagem grande">
+</picture>
+<hr>
+<h1>Audios em HTML5</h1>
+<p>Alem das imagens dinamiscas, tambem podemos colocar audios em um site. basta usar a tag &lt;audio&gt; <br>
+e depois em 'src' escolher o arquivo do audio.</p>
+<audio src="midias/01 DJ Lucas Beat - Bloqueia Eu - Remix.mp3" controls></audio>
+<p><a href="midias/01 DJ Lucas Beat - Bloqueia Eu - Remix.mp3" download="Bloqueia Eu.mp3">Clique aqui para baixar a musica em mp3.</a></p>
+</body>
+</html>
