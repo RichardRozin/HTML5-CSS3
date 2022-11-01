@@ -24,8 +24,9 @@ header > h1{
 span#burguer{
     background-color: rgb(80, 79, 79);
     text-align: center;
+    margin-left: -20px;
     color: white;
-    width: 92.69vw;
+    width: 100vw;
     padding: 10px;
     cursor: pointer;
 }
